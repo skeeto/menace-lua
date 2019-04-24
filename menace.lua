@@ -416,7 +416,7 @@ local readonly = false
 local ngames = 500000
 local seed = os.time()
 
-for opt, arg in getopt(arg, 'b:hirn:') do
+for opt, arg in getopt(arg, 'b:hirn:s:') do
     if opt == 'b' then
         brainfile = arg
     elseif opt == 'h' then
